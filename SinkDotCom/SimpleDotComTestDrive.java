@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class SimpleDotComTestDrive
 {
 	public static void main(String[] args) 
@@ -8,7 +10,11 @@ public class SimpleDotComTestDrive
 		SimpleDotCom dot = new SimpleDotCom();
 		int randomNum = (int) (Math.random() * 5);
 
-		int[] locations = {randomNum, randomNum+1, randomNum+2};
+		ArrayList<String> locations = new ArrayList<String>();
+
+		locations.add(randomNum + "");
+		locations.add(randomNum+1+ "");
+		locations.add(randomNum+2+ "");
 		dot.setLocationCells(locations);
 		boolean isAlive = true;
 
